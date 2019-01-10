@@ -34,7 +34,7 @@
         public string Croatian { get; set; }
 
         [JsonProperty(PropertyName = "fa")]
-        public string Persian { get; set; }
+        public string Danish { get; set; }
 
     }
 }
