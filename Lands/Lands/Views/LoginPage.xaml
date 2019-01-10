@@ -3,7 +3,6 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Lands.Views.LoginPage"
-    BackgroundColor="Gray"
     BindingContext="{Binding Main,Source={StaticResource Locator}}"
     Title="Login">
 
@@ -107,6 +106,9 @@
                     <Image
                         WidthRequest="50"
                         Source="facebook_logo">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding LoginFacebookCommand}"/>
+                        </Image.GestureRecognizers>
                     </Image>
                     <Image 
                         WidthRequest="50"
